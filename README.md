@@ -3,7 +3,7 @@ Automodeler - A simple AutoML lite pipeline
 
 A simple but practical AutoML lite pipeline that can be used in production or for teaching.
 
-Each script is intended for use in a pipeline and the corresponding notebook which allows for understanding each step outside of a pipeline.
+Each script is intended for use in a pipeline. Each notebook is intended for understanding each step of the pipeline and to allow web/UX developers to see the visualizations and tables.
 
 The pipeline consists of four steps:
 
