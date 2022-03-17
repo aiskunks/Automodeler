@@ -12,6 +12,8 @@ The pipeline consists of four steps:
 3. Automodeler  
 4. Interpretability   
 
+
+
 ## Data_Preprocessor  
 *Data_Preprocessor.py and Data_Preprocessor.ipynb*
 
@@ -21,6 +23,9 @@ a.  Data types
 b.  Descriptive statistics   
 c.  Missing values   
 d.  Data distributions  
+
+
+We save as json process and ML related info and visualize it.
 
 ## Data_Scrubber  
 
@@ -33,6 +38,10 @@ b.  It calculates descriptive statistics, missing values & data distributions on
 c.  It compares the difference bewteen the raw data and imputed data on descriptive statistics, missing values & data distributions    
 d.  It determines and visualizes important features   
 
+We compare the raw versus the orginal data for the differences.
+
+We save as json process and ML related info and visualize it.
+
 ## Automodeler     
 
 *Automodeler_H20.py and Automodeler_H20.ipynb*   
@@ -44,15 +53,20 @@ b.  Visualization and tables as .json
   
 Future versions will use other autoML libraries.      
 
+We save as json process and ML related info and visualize it.
+
 ## Interpretability     
 
 *Interpretability.py and Interpretability.ipynb*    
 
 This steps checks loads a validation file and a model file and runs the following interpretability analysis: 
 
-a.  SHAP     
+a. SHAP     
+b. Feature importance  
+c. PDP  
 
 Future versions will add other interpretability libraries and algorithms.   
 
+We save as json process and ML related info and visualize it.
 
 
