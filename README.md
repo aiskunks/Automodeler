@@ -16,8 +16,9 @@ The pipeline consists of four steps:
 
 ## Data_Preprocessor  
 *Data_Preprocessor.py and Data_Preprocessor.ipynb*
-Input: data
-Output: Stats and graphs about the data
+
+*_Input: data tabular ".csv" style file. 
+Output: Stats and graphs about the data_*
 
 This steps checks:  
 
@@ -35,8 +36,11 @@ We save as json process and ML related info and visualize it.
 
 This step asks for a target and confirms the data types from  Data_Preprocessor.py it the:  
 
-Input: data & previous stats (Data_Preprocessor.json)
-Output: Cleaned data and & stats
+
+*_Input: data & previous stats (Data_Preprocessor.json)
+Output: Cleaned data and & stats related to the differences between the orginal and cleaned data.
+determines and visualizes important features.   
+_*      
 
 
 a.  Imputes missing values using KNN and MICE   
@@ -52,6 +56,9 @@ We save as json process and ML related info and visualize it.
 
 *Automodeler_H20.py and Automodeler_H20.ipynb*   
 
+*_Input: cleaned data, important features & previous stats (Data_Preprocessor.json)
+Output: Model files and & stats related to the performance of the best models._*      
+
 This steps uses H2O.ai to create optimized models on the imputed data and outputs relevant statistics and visualization.
 
 a.  Creates and saves models    
@@ -64,6 +71,10 @@ We save as json process and ML related info and visualize it.
 ## Interpretability     
 
 *Interpretability.py and Interpretability.ipynb*    
+
+
+*_Input: validation data, important features, model files & previous stats (Automodeler_H20.json)
+Output: Visualization and & stats related to the interpretability of the best models._*  
 
 This steps checks loads a validation file and a model file and runs the following interpretability analysis: 
 
