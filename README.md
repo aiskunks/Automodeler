@@ -16,6 +16,8 @@ The pipeline consists of four steps:
 
 ## Data_Preprocessor  
 *Data_Preprocessor.py and Data_Preprocessor.ipynb*
+Input: data
+Output: Stats and graphs about the data
 
 This steps checks:  
 
@@ -32,6 +34,10 @@ We save as json process and ML related info and visualize it.
 *Data_Scrubber.py and Data_Scrubber.ipynb*   
 
 This step asks for a target and confirms the data types from  Data_Preprocessor.py it the:  
+
+Input: data & previous stats (Data_Preprocessor.json)
+Output: Cleaned data and & stats
+
 
 a.  Imputes missing values using KNN and MICE   
 b.  It calculates descriptive statistics, missing values & data distributions on the imputed data    
